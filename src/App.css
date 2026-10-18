@@ -1,0 +1,299 @@
+.hero {
+  text-align:center;
+  padding-top: 100px;
+    padding-bottom: 100px;
+ border-radius: 50px;
+    box-shadow: 0 8px 29px rgba(20, 69, 228, 0.18);
+   background: rgba(4, 16, 36, 0.55);
+margin-left: 400px;
+    margin-right: 400px;
+color: #cbd5e1;
+;
+font-family: "Poppins", sans-serif;
+
+}
+
+.social-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 20px;
+  justify-content:center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  color: #135ba3;
+  border: 2px solid #135ba3;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #135ba3;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.projectbtn {
+  background-color: hsl(200, 58%, 30%);
+  border-radius: 12px;
+  border: 0px solid ;
+  padding: 10px 20px;
+margin-left: 10px;
+text-decoration: none;
+color: whitesmoke;
+font-family:Poppins, sans-serif;
+font-size:16px;
+
+}
+.HeadingName {
+  color: hsl(199, 66%, 63%);
+
+  font-weight: bold;
+}
+.subheading {
+  font-weight: normal;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+    font-family: "Poppins", sans-serif;
+  top: 0;
+  z-index: 1000;
+}
+.navbar-list{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+    color: hsl(199, 66%, 63%);
+
+}
+.navbar-name{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: hsl(199, 66%, 63%);
+
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin-left: 80px;
+  font-weight:bold;
+
+}
+.about{
+  margin-top: 120px;
+   color: #cbd5e1;
+margin-bottom: 50px;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+.about-title{
+  font-size: 2rem;
+  color: hsl(199, 66%, 63%);
+
+}
+.about-description {
+   color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  width: 50%;
+  padding: 18px 20px;
+  margin-left: 350px;
+  margin-right: 100px;
+text-align: center;
+   background: rgba(4, 16, 36, 0.55);
+
+  border-radius: 12px;
+
+ 
+
+  box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+
+  transition: all 0.3s ease;
+
+}
+.skills {
+  text-align: center;
+  padding: 20px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 230px;
+}
+.skill-title{
+  font-size: 2rem;
+  color: hsl(199, 66%, 63%);
+
+}
+.skill-list{
+  display: flex;
+  flex-direction:row;
+  gap: 100px;
+     color: #cbd5e1;
+justify-content: space-around;
+margin-left: 200px;
+margin-right: 200px;
+
+
+}
+
+.skill-section > h2{
+  color: hsl(199, 66%, 63%);
+font-size: 1.3rem;
+}
+.skill-section {
+   background: rgba(4, 16, 36, 0.55);
+
+  border-radius: 12px;
+
+width: 400px;
+height: max-content;
+margin-bottom: 30px;
+
+  box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+}
+.projects{
+  margin-bottom: 120px;
+  
+}
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  color: #cbd5e1;
+  border-width: 400px;
+}
+.projects-list2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  color: #cbd5e1;
+  border-width: 400px;
+  margin-top:100px;
+}
+.projects-title{
+  font-size: 2rem;
+  color: hsl(199, 66%, 63%);
+  text-align: center;
+}
+.project-item{
+   background: rgba(4, 16, 36, 0.55);
+padding: 14px;
+width:350px;
+  border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+
+}
+.project-item1{
+   background: rgba(4, 16, 36, 0.55);
+padding: 14px;
+width:350px;
+  border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+text-align: center;
+gap:50px;
+}
+.project-item > h3 {
+  color: hsl(199, 66%, 63%);
+}
+.project-item > a 
+
+{
+  color: hsl(199, 66%, 63%);
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.project-item1 > a:hover{
+  color: rgb(190, 107, 107);
+}
+.project-item1 > h3 {
+  color: hsl(199, 66%, 63%);
+}
+.project-item1 > a 
+
+{
+  color: hsl(199, 66%, 63%);
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.project-item1 > a:hover{
+  color: rgb(190, 107, 107);
+}
+.project-tech{
+  color: hsl(199, 66%, 63%);
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+.education{
+  color: #cbd5e1;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+.edu-title{
+  font-size: 2rem;
+  padding: 30px;
+  color: hsl(199, 66%, 63%);
+}
+.degree{
+
+
+  border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+   background: rgba(4, 16, 36, 0.55);
+  text-align: center;
+  padding: 20px;
+  margin-left: 400px;
+    margin-right: 400px;
+margin-bottom: 160px;
+}
+.edu-bsc{
+    color: hsl(199, 66%, 63%);
+text-align: center;
+}
+.certification{
+  text-align: start;
+  border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(23, 66, 207, 0.18);
+   background: rgba(4, 16, 36, 0.55);
+  text-align: center;
+  padding: 20px;
+  margin-left: 500px;
+    margin-right: 500px;
+margin-top:70px;
+}
+.certification > h3 {
+  color: hsl(199, 66%, 63%);
+
+  
+}
+.contact {
+  text-align: center;
+}
+  
+
+.contact > h3{
+  color: hsl(199, 66%, 63%);
+font-weight: bolder;
+}
+.contact > p{
+  color: #cbd5e1;
+  font-weight: normal;
+}
