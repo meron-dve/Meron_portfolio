@@ -1,6 +1,7 @@
 function Navbar() {
   return (
-    <nav className="navbar">
+    <div className="container">
+    <div className="navbar">
       <p className="navbar-name">Meron.dev</p>
       <ul className="navbar-list">
         <li>
@@ -29,7 +30,8 @@ function Navbar() {
           </a>
         </li>
       </ul>
-    </nav>
+    </div>
+    </div>
   );
 }
 export default Navbar;
