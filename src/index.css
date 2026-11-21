@@ -1,48 +1,86 @@
+/* Theme colors. Light is the default; [data-theme="dark"] switches them. */
 :root {
-  --text: #6b6375;
-  --text-h: #4e17db;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(116, 30, 207, 0.);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(20, 16, 16, 0.1) 0 10px 15px -3px, rgba(36, 26, 26, 0.05) 0 4px 6px -2px;
+  --bg: #ffffff;
+  --fg: #111111;
+  --text: #3f3f46;
+  --muted: #52525b;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --tile: #f7f7f8;
+  --dots: #d4d4d8;
+  --shadow: 0 24px 40px -24px rgba(0, 0, 0, 0.22);
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --footer-bg: #111111;
+  --footer-dots: #2e2e33;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
+  --sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+
+  color-scheme: light;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--fg);
   background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #264374;
-    --text-h: #1758db;
-    --bg: #0F172A;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(129, 135, 201, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+:root[data-theme="dark"] {
+  --bg: #0b0b0c;
+  --fg: #f4f4f5;
+  --text: #d4d4d8;
+  --muted: #a1a1aa;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --surface: #141416;
+  --surface-2: #1e1e22;
+  --tile: #1c1c1f;
+  --dots: #26262a;
+  --shadow: 0 24px 40px -24px rgba(0, 0, 0, 0.7);
+
+  --footer-bg: #050505;
+  --footer-dots: #1f1f23;
+
+  color-scheme: dark;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
